@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Messagerie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Mini Messagerie HTTP</h1>
+
+  <!-- SECTION : Création utilisateur -->
+  <section>
+    <h2>Créer un utilisateur</h2>
+
+    <form id="create-user-form">
+      <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Créer</button>
+    </form>
+
+    <div id="users-list"></div>
+  </section>
+
+  <!-- SECTION : Envoi message -->
+  <section>
+    <h2>Envoyer un message</h2>
+
+    <form id="send-message-form">
+      <input type="number" id="sender-id" placeholder="ID expéditeur" required>
+      <input type="number" id="receiver-id" placeholder="ID destinataire" required>
+      <input type="text" id="subject" placeholder="Sujet" required>
+      <textarea id="body" placeholder="Contenu" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- SECTION : Inbox -->
+  <section>
+    <h2>Boîte de réception</h2>
+
+    <input type="number" id="inbox-user-id" placeholder="ID utilisateur">
+    <button id="load-inbox">Charger</button>
+
+    <div id="inbox-list"></div>
+  </section>
+
+  <!-- ALERTES -->
+  <div id="alert-container"></div>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>
