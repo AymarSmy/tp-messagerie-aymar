@@ -33,7 +33,6 @@ Le projet est organisé en plusieurs fichiers :
 - `schemas.py` : schémas de validation
 - `database.py` : création de la base SQLite
 - `frontend/` : interface HTML/JS
-- `TESTS.md` : tests manuels du scénario demandé
 
 ## Fonctionnement général
 
